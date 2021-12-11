@@ -33,7 +33,17 @@
     background-color: yellow;
     height: 25vh;
     width: 100%;
+    animation-name: blink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes blink {
+    0% {background-color: yellow;} /*start*/
+    25% {background-color: orangered;}
+    50% {background-color: red;}
+    75% {background-color: orangered;}
+    100% {background-color: yellow;} /*end*/
 }
 
 #connect {
@@ -114,3 +124,8 @@
     }
 }
 
+img {
+    max-width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
+}
