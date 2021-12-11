@@ -1,7 +1,0 @@
-not_to_public.py
-venv
-env
-.idea
-.pytest_cache
-.converage
-_pycache
